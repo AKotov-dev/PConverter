@@ -1,0 +1,84 @@
+[NAME]
+name=pconverter
+
+[VERSION]
+version=1.0
+
+[RELEASE]
+release=1.mrx8
+
+[GROUP]
+group=Applications/File
+
+[DESCRIPTION]
+0=PConverter - Frontend for Alian.
+1=The idea of the GUI is borrowed from the project "Package Converter", which
+2=developed "foxoman" and out 4/july/2009
+3=https://code.google.com/archive/p/foxoman/wikis/PackageConverter.wiki
+4=---
+5=More information: /usr/share/doc/package_name/repack.txt
+
+[MAINTAINER]
+maintainer=Alex Kotov
+
+[VENDOR]
+vendor=alex_q_2000 (C) 2021
+
+[SUMMARY]
+summary=PConverter - Frontend for Alian
+
+[URLCOPY]
+urlcopy=https://cloud.mail.ru/public/ifgP/nJkagqGrY
+
+[LICENSE]
+license=GPLv3
+
+[DEPS]
+deps=alien
+
+[META]
+meta=0
+
+[NOARCH]
+noarch=0
+
+[SIGN]
+sign=0
+
+[DEB]
+deb=1
+
+[FILES]
+0=/usr/bin/pconverter
+1=/usr/share/pconverter/
+2=/usr/share/icons/pconverter.png
+3=/usr/share/polkit-1/actions/pconverter.policy
+4=/usr/share/applications/pconverter.desktop
+5=/usr/share/doc/pconverter/
+
+[AFTERINSTALL]
+0=#ldconfig
+1=#update-desktop-database -q /usr/share/applications
+2=#update-mime-database /usr/share/mime
+3=#gtk-update-icon-cache -q -f /usr/share/icons/hicolor
+
+[AFTERREMOVE]
+0=#ldconfig
+1=#update-desktop-database -q /usr/share/applications
+2=#update-mime-database /usr/share/mime
+3=#gtk-update-icon-cache -q -f /usr/share/icons/hicolor
+
+[URL32]
+url32=https://cloud.mail.ru/public/ifgP/nJkagqGrY
+
+[URL64]
+url64=
+
+[PROGRAMNAME]
+programname=PConverter
+
+[DEVTOOL]
+devtool=Lazarus
+
+[TOOLVERSION]
+toolversion=2.0.10

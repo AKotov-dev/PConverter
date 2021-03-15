@@ -1,0 +1,352 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: Package Converter\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: alex_q_2000 (C) 2021\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: taboutform.caption
+msgctxt "taboutform.caption"
+msgid "About"
+msgstr ""
+
+#: taboutform.label1.caption
+msgid "PConverter"
+msgstr ""
+
+#: taboutform.label2.caption
+msgid ""
+"GUI for Alian\n"
+"\n"
+"License: GPLv3\n"
+"Author: alex_q_2000 (C) 2021\n"
+"Compilation: Lazarus 2.0.10\n"
+"Gratitudes: foxoman\n"
+"\n"
+"Russian Linux Forum: https://linuxforum.ru\n"
+"\n"
+"The idea of the GUI is borrowed from\n"
+"the project \"Package Converter\", which \n"
+"developed \"foxoman\" and out 4 july 2009\n"
+msgstr ""
+
+#: tmainform.caption
+msgid "PСonverter"
+msgstr ""
+
+#: tmainform.checkbox1.caption
+msgid "--scripts"
+msgstr ""
+
+#: tmainform.checkbox1.hint
+msgid ""
+"Try to convert the scripts that are meant to be run when the package is installed\n"
+"and removed. Use this with caution, becuase these scripts might be designed to\n"
+"work on a system unlike your own, and could cause problems. It is recommended\n"
+"that you examine the scripts by hand and check to see what they do before using this option.\n"
+msgstr ""
+
+#: tmainform.checkbox10.caption
+msgid "--verbose"
+msgstr ""
+
+#: tmainform.checkbox10.hint
+msgid ""
+"Be verbose: Display each command alien runs in the process\n"
+"of converting a package.\n"
+msgstr ""
+
+#: tmainform.checkbox11.caption
+msgid "--test"
+msgstr ""
+
+#: tmainform.checkbox11.hint
+msgid ""
+"Test the generated packages. Currently this is only supported for debian packages,\n"
+"which, if lintian is installed, will be tested with lintian and lintian's output displayed.\n"
+msgstr ""
+
+#: tmainform.checkbox13.caption
+msgid "--patch="
+msgstr ""
+
+#: tmainform.checkbox13.hint
+msgid ""
+"Specify the patch to be used instead of automatically looking the patch up in\n"
+"/var/lib/alien. This has no effect unless a debian package is being built.\n"
+msgstr ""
+
+#: tmainform.checkbox14.caption
+msgid "--description="
+msgstr ""
+
+#: tmainform.checkbox14.hint
+msgid ""
+"Specifiy a description for the package. This only has an effect when converting\n"
+"from the tgz package format, which lacks descriptions.\n"
+msgstr ""
+
+#: tmainform.checkbox15.caption
+msgid "--version="
+msgstr ""
+
+#: tmainform.checkbox15.hint
+msgid ""
+"Specifiy a version for the package. This only has an effect when converting\n"
+"from the tgz package format, which may lack version information.\n"
+msgstr ""
+
+#: tmainform.checkbox2.caption
+msgid "--keep-version"
+msgstr ""
+
+#: tmainform.checkbox2.hint
+msgid ""
+"By default, alien adds one to the minor version number of each package\n"
+"it converts. If this option is given, alien will not do this.\n"
+msgstr ""
+
+#: tmainform.checkbox3.caption
+msgid "--fixperms"
+msgstr ""
+
+#: tmainform.checkbox3.hint
+msgid ""
+"Sanitize all file owners and permissions when building a deb. This may be useful if\n"
+"the original package is a mess. On the other hand, it may break some things to mess\n"
+"with their permissions and owners to the degree this does, so it defaults to off. This\n"
+"can only be used when converting to debian packages.\n"
+msgstr ""
+
+#: tmainform.checkbox4.caption
+msgid "--nopatch"
+msgstr ""
+
+#: tmainform.checkbox4.hint
+msgid "Do not use any patch files."
+msgstr ""
+
+#: tmainform.checkbox5.caption
+msgid "--generate"
+msgstr ""
+
+#: tmainform.checkbox5.hint
+msgid ""
+"Generate a temporary directory suitable for building a package from, but do not\n"
+" actually create the package. This is useful if you want to move files around in the\n"
+" package before building it. The package can be built from this temporary directory by\n"
+" running \"debian/rules binary\", if you were creating a Debian package, or by running\n"
+" \"rpmbuild -bb <packagename>.spec\" if you were creating a Red Hat package.\n"
+msgstr ""
+
+#: tmainform.checkbox6.caption
+msgid "--single"
+msgstr ""
+
+#: tmainform.checkbox6.hint
+msgid ""
+"Like -g, but do not generate the packagename.orig directory. This is only useful when\n"
+"you are very low on disk space and are generating a debian package.\n"
+msgstr ""
+
+#: tmainform.checkbox7.caption
+msgid "--install"
+msgstr ""
+
+#: tmainform.checkbox7.hint
+msgid ""
+"Automatically install each generated package, and remove the package file\n"
+"after it has been installed.\n"
+msgstr ""
+
+#: tmainform.checkbox8.caption
+msgid "--anypatch"
+msgstr ""
+
+#: tmainform.checkbox8.hint
+msgid ""
+"Be less strict about which patch file is used, perhaps attempting to use a patch file\n"
+"for an older verson of the package. This is not guaranteed to always work; older\n"
+"patches may not necessarily work with newer packages.\n"
+msgstr ""
+
+#: tmainform.checkbox9.caption
+msgid "--bump="
+msgstr ""
+
+#: tmainform.checkbox9.hint
+msgid ""
+"Instead of incrementing the version number of the converted package\n"
+"by 1, increment it by the given number.\n"
+msgstr ""
+
+#: tmainform.combobox1.text
+msgid "Package Type"
+msgstr ""
+
+#: tmainform.convertbtn.caption
+msgctxt "tmainform.convertbtn.caption"
+msgid "Convert"
+msgstr ""
+
+#: tmainform.editbutton1.buttoncaption
+msgctxt "tmainform.editbutton1.buttoncaption"
+msgid "+"
+msgstr ""
+
+#: tmainform.editbutton2.buttoncaption
+msgid "..."
+msgstr ""
+
+#: tmainform.editbutton3.buttoncaption
+msgctxt "tmainform.editbutton3.buttoncaption"
+msgid "+"
+msgstr ""
+
+#: tmainform.label1.caption
+msgctxt "tmainform.label1.caption"
+msgid "[ Select your final package type ]"
+msgstr ""
+
+#: tmainform.label2.caption
+msgctxt "tmainform.label2.caption"
+msgid "alien supports conversion between Linux Standard Base (LSB), LSB-compliant .rpm packages, .deb, Stampede (.slp), Solaris (.pkg) and Slackware (.tgz, .txz, .tbz, .tlz) packages. It is also capable of automatically installing the generated packages, and can try to convert the installation scripts included in the archive well."
+msgstr ""
+
+#: tmainform.label3.caption
+msgid "OPTIONS"
+msgstr ""
+
+#: tmainform.label4.caption
+msgctxt "tmainform.label4.caption"
+msgid "Idle"
+msgstr ""
+
+#: tmainform.label5.caption
+msgid "* File and Folder path should not contain spaces or any Characteristics"
+msgstr ""
+
+#: tmainform.toolbar1.caption
+msgid "ToolBar1"
+msgstr ""
+
+#: tmainform.toolbutton1.caption
+msgid "Add"
+msgstr ""
+
+#: tmainform.toolbutton10.caption
+msgid "Quit"
+msgstr ""
+
+#: tmainform.toolbutton2.caption
+msgid "ToolButton2"
+msgstr ""
+
+#: tmainform.toolbutton3.caption
+msgid "Folder"
+msgstr ""
+
+#: tmainform.toolbutton4.caption
+msgid "ToolButton4"
+msgstr ""
+
+#: tmainform.toolbutton6.caption
+msgid "ToolButton6"
+msgstr ""
+
+#: tmainform.toolbutton8.caption
+msgid "ToolButton8"
+msgstr ""
+
+#: tmainform.toolbutton9.caption
+msgctxt "tmainform.toolbutton9.caption"
+msgid "About"
+msgstr ""
+
+#: unit1.sdebian
+msgid "[ Generate a Debian package ]"
+msgstr ""
+
+#: unit1.sdebian2
+msgctxt "unit1.sdebian2"
+msgid "For converting to (but not from) deb format, the gcc, make, debmake, dpkg-dev, and dpkg packages must be installed."
+msgstr ""
+
+#: unit1.sfinal
+msgctxt "unit1.sfinal"
+msgid "[ Select your final package type ]"
+msgstr ""
+
+#: unit1.sfinal2
+msgctxt "unit1.sfinal2"
+msgid "alien supports conversion between Linux Standard Base (LSB), LSB-compliant .rpm packages, .deb, Stampede (.slp), Solaris (.pkg) and Slackware (.tgz, .txz, .tbz, .tlz) packages. It is also capable of automatically installing the generated packages, and can try to convert the installation scripts included in the archive well."
+msgstr ""
+
+#: unit1.slsb
+msgid "[ Generate a LSB package ]"
+msgstr ""
+
+#: unit1.slsb2
+msgctxt "unit1.slsb2"
+msgid "Unlike the other package formats, alien can handle the depenendencies of lsb packages if the destination package format supports dependencies. Note that this means that the package generated from a lsb package will depend on a package named \"lsb\" -- your distribution should provide a package by that name, if it is lsb compliant. The scripts in the lsb package will be converted by default as well."
+msgstr ""
+
+#: unit1.sprogressconversion
+msgid "Conversion..."
+msgstr ""
+
+#: unit1.sprogressidle
+msgctxt "unit1.sprogressidle"
+msgid "Idle"
+msgstr ""
+
+#: unit1.sredhat
+msgid "[ Generate a Red Hat package ]"
+msgstr ""
+
+#: unit1.sredhat2
+msgctxt "unit1.sredhat2"
+msgid "For converting to and from rpm format the Red Hat Package Manager must be installed."
+msgstr ""
+
+#: unit1.sslackware
+msgid "[ Generate a SlackWare tgz package ]"
+msgstr ""
+
+#: unit1.sslackware2
+msgctxt "unit1.sslackware2"
+msgid "Note that when converting from the tgz format, alien will simply generate an output package that has the same files in it as are in the tgz file. This only works well if the tgz file has precompiled binaries in it in a standard linux directory tree. Do NOT run alien on tar files with source code in them, unless you want this source code to be installed in your root directory when you install the package!"
+msgstr ""
+
+#: unit1.ssolaris
+msgid "[ Generate a Solaris pkg package ]"
+msgstr ""
+
+#: unit1.ssolaris2
+msgctxt "unit1.ssolaris2"
+msgid "To manipulate packages in the Solaris pkg format (which is really the SV datastream package format, you will need the Solaris pkginfo and pkgtrans tools."
+msgstr ""
+
+#: unit1.sstampede
+msgid "[ Generate a Stampede slp package ]"
+msgstr ""
+
+#: unit1.sstampede2
+msgctxt "unit1.sstampede2"
+msgid "Make slp package"
+msgstr ""
+
+#: unit1.swarning
+msgid ""
+"1. Select the package to convert\n"
+"2. Select the directory for the final package\n"
+"3. Select your final package type\n"
+msgstr ""
+
