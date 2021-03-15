@@ -9,6 +9,5 @@ Gratitudes: foxoman
 
 Russian Linux Forum: https://linuxforum.ru
 
-The idea of the GUI is borrowed from the project "Package Converter", which developed "foxoman" and out 4 july 2009.  
+The idea of the GUI is borrowed from the project `Package Converter`, which developed `foxoman` and out 4 july 2009.  
 URL: https://code.google.com/archive/p/foxoman/wikis/PackageConverter.wiki
-
