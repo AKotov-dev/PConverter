@@ -1,6 +1,6 @@
 PConverter - frontend for Alien (Package Converter)
 ---
-GUI for Alian
+GUI for Alien
 
 License: GPLv3  
 Author: alex_q_2000 (C) 2021  
