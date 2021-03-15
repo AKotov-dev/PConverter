@@ -2,10 +2,10 @@ object AboutForm: TAboutForm
   Left = 342
   Height = 291
   Top = 127
-  Width = 419
+  Width = 428
   Caption = 'About'
   ClientHeight = 291
-  ClientWidth = 419
+  ClientWidth = 428
   OnCreate = FormCreate
   Position = poMainFormCenter
   LCLVersion = '2.0.10.0'
@@ -278,7 +278,7 @@ object AboutForm: TAboutForm
     AnchorSideLeft.Control = Bevel1
     AnchorSideLeft.Side = asrCenter
     AnchorSideTop.Control = Bevel1
-    Left = 173
+    Left = 177
     Height = 30
     Top = 251
     Width = 75
@@ -294,7 +294,7 @@ object AboutForm: TAboutForm
     Left = 8
     Height = 13
     Top = 240
-    Width = 404
+    Width = 413
     Anchors = [akLeft, akRight]
     Shape = bsTopLine
   end
