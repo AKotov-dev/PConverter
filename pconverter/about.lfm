@@ -271,7 +271,7 @@ object AboutForm: TAboutForm
     Height = 180
     Top = 40
     Width = 253
-    Caption = 'GUI for Alian'#10#10'License: GPLv3'#10'Author: alex_q_2000 (C) 2021'#10'Compilation: Lazarus 2.0.10'#10'Gratitudes: foxoman'#10#10'Russian Linux Forum: https://linuxforum.ru'#10#10'The idea of the GUI is borrowed from'#10'the project "Package Converter", which '#10'developed "foxoman" and out 4 july 2009'
+    Caption = 'GUI for Alien'#10#10'License: GPLv3'#10'Author: alex_q_2000 (C) 2021'#10'Compilation: Lazarus 2.0.10'#10'Gratitudes: foxoman'#10#10'Russian Linux Forum: https://linuxforum.ru'#10#10'The idea of the GUI is borrowed from'#10'the project "Package Converter", which '#10'developed "foxoman" and out 4 july 2009'
     ParentColor = False
   end
   object BitBtn1: TBitBtn

@@ -23,7 +23,7 @@ msgstr ""
 
 #: taboutform.label2.caption
 msgid ""
-"GUI for Alian\n"
+"GUI for Alien\n"
 "\n"
 "License: GPLv3\n"
 "Author: alex_q_2000 (C) 2021\n"
