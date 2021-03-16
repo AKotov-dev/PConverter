@@ -1,7 +1,5 @@
 PConverter - GUI Frontend for Alien (Package Converter)
 ---
-GUI for Alien
-
 License: GPLv3  
 Author: alex_q_2000 (C) 2021  
 Compilation: Lazarus 2.0.10  
