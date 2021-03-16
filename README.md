@@ -1,4 +1,4 @@
-PConverter - frontend for Alien (Package Converter)
+PConverter - GUI Frontend for Alien (Package Converter)
 ---
 GUI for Alien
 
