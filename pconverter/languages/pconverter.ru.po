@@ -23,8 +23,6 @@ msgstr ""
 
 #: taboutform.label2.caption
 msgid ""
-"GUI for Alien\n"
-"\n"
 "License: GPLv3\n"
 "Author: alex_q_2000 (C) 2021\n"
 "Compilation: Lazarus 2.0.10\n"
@@ -32,12 +30,10 @@ msgid ""
 "\n"
 "Russian Linux Forum: https://linuxforum.ru\n"
 "\n"
-"The idea of the GUI is borrowed from\n"
-"the project \"Package Converter\", which \n"
-"developed \"foxoman\" and out 4 july 2009\n"
+"The idea of the GUI was borrowed from\n"
+"the project \"Package Converter\", which\n"
+"was developed by \"foxman\" 04.07.2009\n"
 msgstr ""
-"GUI для Alien\n"
-"\n"
 "Лицензия: GPLv3\n"
 "Автор: alex_q_2000 (C) 2021\n"
 "Компиляция: Lazarus 2.0.10\n"
@@ -45,9 +41,13 @@ msgstr ""
 "\n"
 "Russian Linux Forum: https://linuxforum.ru\n"
 "\n"
-"Идея GUI для PConverter заимствована\n"
-"из проекта \"Package Converter\", который \n"
-"разработал \"foxoman\" и вышел 4 июля 2009\n"
+"Идея GUI была позаимствована из\n"
+"проекта \"Package Converter\", который\n"
+"был разработан \"foxoman\" 04.07.2009\n"
+
+#: taboutform.label3.caption
+msgid "GUI for Alien"
+msgstr ""
 
 #: tmainform.caption
 msgid "PСonverter"
@@ -265,8 +265,8 @@ msgstr "[ Выберите тип конечного пакета ]"
 
 #: tmainform.label2.caption
 msgctxt "tmainform.label2.caption"
-msgid "alien supports conversion between Linux Standard Base (LSB), LSB-compliant .rpm packages, .deb, Stampede (.slp), Solaris (.pkg) and Slackware (.tgz, .txz, .tbz, .tlz) packages. It is also capable of automatically installing the generated packages, and can try to convert the installation scripts included in the archive well."
-msgstr "alien поддерживает преобразование между пакетами Linux Standard Base (LSB), LSB-совместимыми пакетами .rpm, .deb, Stampede (.slp), Solaris (.pkg) и Slackware (.tgz, .txz, .tbz, .tlz). Он также способен автоматически устанавливать сгенерированные пакеты и может попытаться преобразовать сценарии установки, включенные в архив."
+msgid "Alien supports conversion between Linux Standard Base (LSB), LSB-compliant .rpm packages, .deb, Stampede (.slp), Solaris (.pkg) and Slackware (.tgz, .txz, .tbz, .tlz) packages. It is also capable of automatically installing the generated packages, and can try to convert the installation scripts included in the archive well."
+msgstr "Alien поддерживает преобразование между пакетами Linux Standard Base (LSB), LSB-совместимыми пакетами .rpm, .deb, Stampede (.slp), Solaris (.pkg) и Slackware (.tgz, .txz, .tbz, .tlz). Он также способен автоматически устанавливать сгенерированные пакеты и может попытаться преобразовать сценарии установки, включенные в архив."
 
 #: tmainform.label3.caption
 msgid "OPTIONS"
@@ -280,10 +280,6 @@ msgstr "Ожидание"
 #: tmainform.label5.caption
 msgid "* File and Folder path should not contain spaces or any Characteristics"
 msgstr "* Путь не должен содержать пробелов или других Особенностей"
-
-#: tmainform.toolbar1.caption
-msgid "ToolBar1"
-msgstr ""
 
 #: tmainform.toolbutton1.caption
 msgid "Add"

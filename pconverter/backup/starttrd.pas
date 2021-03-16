@@ -5,7 +5,7 @@ unit StartTRD;
 interface
 
 uses
-  Classes, Forms, Controls, SysUtils, Process, StdCtrls, ComCtrls, Graphics;
+  Classes, Process, SysUtils, ComCtrls, Graphics;
 
 type
   StartConvert = class(TThread)
@@ -47,8 +47,7 @@ begin
 
     ExProcess.Executable := 'bash';
     ExProcess.Parameters.Add('-c');
-    ExProcess.Parameters.Add('if [ ! -d  ' + MainForm.EditButton2.Text + ' ]; then exit 1; fi; cd ' + MainForm.EditButton2.Text +
-      '; ' + command + MainForm.EditButton1.Text);
+    ExProcess.Parameters.Add(command + MainForm.EditButton1.Text);
 
     ExProcess.Options := ExProcess.Options + [poUsePipes, poStderrToOutPut];
 
@@ -59,7 +58,7 @@ begin
     begin
       Result.LoadFromStream(ExProcess.Output);
       //Выводим лог конвертирования
-      if Result.Count <> 0 then
+     // if Result.Count <> 0 then
         Synchronize(@ShowLog);
     end;
 

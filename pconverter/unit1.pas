@@ -205,7 +205,7 @@ begin
   else
     SetCurrentDir(EditButton2.Text);
 
-  //запуск потока сразу
+  //Запуск потока сразу
   FStartConvertThread := StartConvert.Create(False);
   FStartConvertThread.Priority := tpNormal;
 end;

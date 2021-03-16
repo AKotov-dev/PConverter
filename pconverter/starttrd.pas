@@ -5,7 +5,7 @@ unit StartTRD;
 interface
 
 uses
-  Classes, Forms, Controls, SysUtils, Process, StdCtrls, ComCtrls, Graphics;
+  Classes, Process, SysUtils, ComCtrls, Graphics;
 
 type
   StartConvert = class(TThread)
@@ -53,7 +53,7 @@ begin
 
     ExProcess.Execute;
 
-    //Пока поток запущен, отдавать результат прогресса из консоли в MainForm.StatusText
+    //Пока поток запущен, отдавать результат выполнения в MainForm.Memo1
     while ExProcess.Running do
     begin
       Result.LoadFromStream(ExProcess.Output);
@@ -142,6 +142,5 @@ procedure StartConvert.ShowLog;
 begin
   MainForm.Memo1.Lines.Add(Trim(Result[0]));
 end;
-
 
 end.

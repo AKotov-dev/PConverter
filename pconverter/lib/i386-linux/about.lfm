@@ -1,11 +1,11 @@
 object AboutForm: TAboutForm
-  Left = 416
+  Left = 321
   Height = 291
-  Top = 201
-  Width = 430
+  Top = 199
+  Width = 420
   Caption = 'About'
   ClientHeight = 291
-  ClientWidth = 430
+  ClientWidth = 420
   OnCreate = FormCreate
   Position = poMainFormCenter
   SessionProperties = 'Width;Height'
@@ -255,7 +255,7 @@ object AboutForm: TAboutForm
   object Label1: TLabel
     AnchorSideLeft.Control = Label2
     AnchorSideLeft.Side = asrCenter
-    Left = 193
+    Left = 195
     Height = 23
     Top = 8
     Width = 131
@@ -271,7 +271,7 @@ object AboutForm: TAboutForm
     Left = 120
     Height = 150
     Top = 72
-    Width = 276
+    Width = 280
     Caption = 'License: GPLv3'#10'Author: alex_q_2000 (C) 2021'#10'Compilation: Lazarus 2.0.10'#10'Gratitudes: foxoman'#10#10'Russian Linux Forum: https://linuxforum.ru'#10#10'The idea of the GUI is borrowed from'#10'the project "Package Converter", which '#10'developed "foxoman" and out 4 july 2009'
     ParentColor = False
   end
@@ -279,7 +279,7 @@ object AboutForm: TAboutForm
     AnchorSideLeft.Control = Bevel1
     AnchorSideLeft.Side = asrCenter
     AnchorSideTop.Control = Bevel1
-    Left = 178
+    Left = 173
     Height = 30
     Top = 251
     Width = 75
@@ -295,7 +295,7 @@ object AboutForm: TAboutForm
     Left = 8
     Height = 13
     Top = 240
-    Width = 415
+    Width = 405
     Anchors = [akLeft, akRight]
     Shape = bsTopLine
   end

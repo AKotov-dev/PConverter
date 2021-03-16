@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Buttons;
+  Buttons, IniPropStorage;
 
 type
 
@@ -16,8 +16,10 @@ type
     Bevel1: TBevel;
     BitBtn1: TBitBtn;
     Image1: TImage;
+    IniPropStorage1: TIniPropStorage;
     Label1: TLabel;
     Label2: TLabel;
+    Label3: TLabel;
     procedure BitBtn1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
@@ -31,6 +33,8 @@ var
 
 implementation
 
+uses Unit1;
+
 {$R *.lfm}
 
 { TAboutForm }
@@ -43,7 +47,7 @@ end;
 procedure TAboutForm.FormCreate(Sender: TObject);
 begin
   Label1.Caption := Application.Title;
+  AboutForm.IniPropStorage1.IniFileName := MainForm.IniPropStorage1.IniFileName;
 end;
 
 end.
-

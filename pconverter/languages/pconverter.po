@@ -23,8 +23,6 @@ msgstr ""
 
 #: taboutform.label2.caption
 msgid ""
-"GUI for Alien\n"
-"\n"
 "License: GPLv3\n"
 "Author: alex_q_2000 (C) 2021\n"
 "Compilation: Lazarus 2.0.10\n"
@@ -32,9 +30,13 @@ msgid ""
 "\n"
 "Russian Linux Forum: https://linuxforum.ru\n"
 "\n"
-"The idea of the GUI is borrowed from\n"
-"the project \"Package Converter\", which \n"
-"developed \"foxoman\" and out 4 july 2009\n"
+"The idea of the GUI was borrowed from\n"
+"the project \"Package Converter\", which\n"
+"was developed by \"foxman\" 04.07.2009\n"
+msgstr ""
+
+#: taboutform.label3.caption
+msgid "GUI for Alien"
 msgstr ""
 
 #: tmainform.caption
@@ -217,7 +219,7 @@ msgstr ""
 
 #: tmainform.label2.caption
 msgctxt "tmainform.label2.caption"
-msgid "alien supports conversion between Linux Standard Base (LSB), LSB-compliant .rpm packages, .deb, Stampede (.slp), Solaris (.pkg) and Slackware (.tgz, .txz, .tbz, .tlz) packages. It is also capable of automatically installing the generated packages, and can try to convert the installation scripts included in the archive well."
+msgid "Alien supports conversion between Linux Standard Base (LSB), LSB-compliant .rpm packages, .deb, Stampede (.slp), Solaris (.pkg) and Slackware (.tgz, .txz, .tbz, .tlz) packages. It is also capable of automatically installing the generated packages, and can try to convert the installation scripts included in the archive well."
 msgstr ""
 
 #: tmainform.label3.caption
@@ -231,10 +233,6 @@ msgstr ""
 
 #: tmainform.label5.caption
 msgid "* File and Folder path should not contain spaces or any Characteristics"
-msgstr ""
-
-#: tmainform.toolbar1.caption
-msgid "ToolBar1"
 msgstr ""
 
 #: tmainform.toolbutton1.caption
