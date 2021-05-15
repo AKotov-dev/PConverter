@@ -32,7 +32,7 @@ msgid ""
 "\n"
 "The idea of the GUI was borrowed from\n"
 "the project \"Package Converter\", which\n"
-"was developed by \"foxman\" 04.07.2009\n"
+"was developed by \"foxoman\" 04.07.2009\n"
 msgstr ""
 
 #: taboutform.label3.caption

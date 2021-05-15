@@ -1,7 +1,7 @@
 object AboutForm: TAboutForm
-  Left = 416
+  Left = 380
   Height = 291
-  Top = 201
+  Top = 142
   Width = 430
   Caption = 'About'
   ClientHeight = 291
@@ -255,7 +255,7 @@ object AboutForm: TAboutForm
   object Label1: TLabel
     AnchorSideLeft.Control = Label2
     AnchorSideLeft.Side = asrCenter
-    Left = 193
+    Left = 181
     Height = 23
     Top = 8
     Width = 131
@@ -271,8 +271,8 @@ object AboutForm: TAboutForm
     Left = 120
     Height = 150
     Top = 72
-    Width = 276
-    Caption = 'License: GPLv3'#10'Author: alex_q_2000 (C) 2021'#10'Compilation: Lazarus 2.0.10'#10'Gratitudes: foxoman'#10#10'Russian Linux Forum: https://linuxforum.ru'#10#10'The idea of the GUI is borrowed from'#10'the project "Package Converter", which '#10'developed "foxoman" and out 4 july 2009'
+    Width = 253
+    Caption = 'License: GPLv3'#10'Author: alex_q_2000 (C) 2021'#10'Compilation: Lazarus 2.0.10'#10'Gratitudes: foxoman'#10#10'Russian Linux Forum: https://linuxforum.ru'#10#10'The idea of the GUI was borrowed from'#10'the project "Package Converter", which'#10'was developed by "foxman" 04.07.2009'
     ParentColor = False
   end
   object BitBtn1: TBitBtn

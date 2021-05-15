@@ -2,17 +2,17 @@
 name=pconverter
 
 [VERSION]
-version=1.0
+version=1.1
 
 [RELEASE]
-release=2.mrx8
+release=0.mrx8
 
 [GROUP]
 group=Applications/File
 
 [DESCRIPTION]
 0=The idea of the GUI was borrowed from the project
-1="Package Converter", which was developed by "foxman" 04.07.2009
+1="Package Converter", which was developed by "foxoman" 04.07.2009
 2=https://code.google.com/archive/p/foxoman/wikis/PackageConverter.wiki
 3=---
 4=More information: /usr/share/doc/package_name/repack.txt
@@ -81,3 +81,8 @@ devtool=Lazarus
 
 [TOOLVERSION]
 toolversion=2.0.10
+
+[INFO]
+0=v1.1
+1=+ saving the checkbox state
+2=+ cosmetic edits

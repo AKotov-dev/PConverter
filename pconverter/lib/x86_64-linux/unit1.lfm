@@ -8,7 +8,7 @@ object MainForm: TMainForm
   ClientHeight = 686
   ClientWidth = 610
   OnCreate = FormCreate
-  SessionProperties = 'Top;Left;Width;Height'
+  SessionProperties = 'Height;Left;Top;Width;CheckBox1.Checked;CheckBox10.Checked;CheckBox11.Checked;CheckBox13.Checked;CheckBox14.Checked;CheckBox15.Checked;CheckBox2.Checked;CheckBox3.Checked;CheckBox4.Checked;CheckBox5.Checked;CheckBox6.Checked;CheckBox7.Checked;CheckBox8.Checked;CheckBox9.Checked'
   LCLVersion = '2.0.10.0'
   object ToolBar1: TToolBar
     Left = 0
@@ -427,8 +427,10 @@ object MainForm: TMainForm
     Top = 318
     Width = 93
     Caption = '--verbose'
+    Checked = True
     ParentShowHint = False
     ShowHint = True
+    State = cbChecked
     TabOrder = 7
   end
   object ImageList1: TImageList

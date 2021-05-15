@@ -3,11 +3,12 @@ object MainForm: TMainForm
   Height = 686
   Top = 123
   Width = 610
+  ActiveControl = EditButton1
   Caption = 'PСonverter'
   ClientHeight = 686
   ClientWidth = 610
   OnCreate = FormCreate
-  SessionProperties = 'Top;Left;Width;Height'
+  SessionProperties = 'Height;Left;Top;Width;CheckBox1.Checked;CheckBox10.Checked;CheckBox11.Checked;CheckBox13.Checked;CheckBox14.Checked;CheckBox15.Checked;CheckBox2.Checked;CheckBox3.Checked;CheckBox4.Checked;CheckBox5.Checked;CheckBox6.Checked;CheckBox7.Checked;CheckBox8.Checked;CheckBox9.Checked'
   LCLVersion = '2.0.10.0'
   object ToolBar1: TToolBar
     Left = 0
@@ -218,7 +219,7 @@ object MainForm: TMainForm
     Caption = '--nopatch'
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 7
+    TabOrder = 11
   end
   object CheckBox5: TCheckBox
     Left = 8
@@ -262,7 +263,7 @@ object MainForm: TMainForm
     Caption = '--anypatch'
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 11
+    TabOrder = 17
   end
   object CheckBox9: TCheckBox
     Left = 316
@@ -273,7 +274,7 @@ object MainForm: TMainForm
     Caption = '--bump='
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 12
+    TabOrder = 15
   end
   object CheckBox11: TCheckBox
     Left = 8
@@ -284,7 +285,7 @@ object MainForm: TMainForm
     Caption = '--test'
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 13
+    TabOrder = 12
   end
   object CheckBox13: TCheckBox
     Left = 8
@@ -295,7 +296,7 @@ object MainForm: TMainForm
     Caption = '--patch='
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 14
+    TabOrder = 18
   end
   object CheckBox14: TCheckBox
     Left = 8
@@ -306,7 +307,7 @@ object MainForm: TMainForm
     Caption = '--description='
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 15
+    TabOrder = 20
   end
   object CheckBox15: TCheckBox
     Left = 152
@@ -317,7 +318,7 @@ object MainForm: TMainForm
     Caption = '--version='
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 16
+    TabOrder = 13
   end
   object Memo1: TMemo
     Left = 8
@@ -326,7 +327,7 @@ object MainForm: TMainForm
     Width = 594
     Anchors = [akTop, akLeft, akRight, akBottom]
     ScrollBars = ssAutoVertical
-    TabOrder = 17
+    TabOrder = 22
     WantReturns = False
   end
   object Label4: TLabel
@@ -348,7 +349,7 @@ object MainForm: TMainForm
     Width = 567
     Anchors = [akLeft, akRight, akBottom]
     BorderSpacing.Left = 4
-    TabOrder = 18
+    TabOrder = 23
   end
   object Edit1: TEdit
     AnchorSideLeft.Control = CheckBox9
@@ -360,7 +361,7 @@ object MainForm: TMainForm
     Top = 382
     Width = 53
     BorderSpacing.Left = 2
-    TabOrder = 19
+    TabOrder = 16
   end
   object Edit3: TEdit
     AnchorSideLeft.Control = CheckBox14
@@ -373,7 +374,7 @@ object MainForm: TMainForm
     Width = 471
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Left = 2
-    TabOrder = 20
+    TabOrder = 21
   end
   object Edit4: TEdit
     AnchorSideLeft.Control = CheckBox15
@@ -385,7 +386,7 @@ object MainForm: TMainForm
     Top = 382
     Width = 53
     BorderSpacing.Left = 2
-    TabOrder = 21
+    TabOrder = 14
   end
   object EditButton3: TEditButton
     AnchorSideLeft.Control = CheckBox13
@@ -404,7 +405,7 @@ object MainForm: TMainForm
     NumGlyphs = 1
     OnButtonClick = EditButton3ButtonClick
     PasswordChar = #0
-    TabOrder = 22
+    TabOrder = 19
   end
   object Label5: TLabel
     Left = 8
@@ -428,7 +429,7 @@ object MainForm: TMainForm
     Caption = '--verbose'
     ParentShowHint = False
     ShowHint = True
-    TabOrder = 23
+    TabOrder = 7
   end
   object ImageList1: TImageList
     Height = 64

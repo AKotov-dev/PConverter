@@ -57,7 +57,9 @@
         <Filename Value="starttrd.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="StartTRD"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
+        <TopLine Value="116"/>
         <CursorPos Y="145"/>
         <UsageCount Value="25"/>
         <Loaded Value="True"/>
@@ -68,7 +70,6 @@
         <ComponentName Value="AboutForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <CursorPos X="47" Y="13"/>
         <UsageCount Value="21"/>
