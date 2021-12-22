@@ -1,12 +1,12 @@
 object AboutForm: TAboutForm
   Left = 380
-  Height = 291
+  Height = 288
   Top = 142
-  Width = 430
+  Width = 427
   Caption = 'About'
-  ClientHeight = 291
-  ClientWidth = 430
-  OnCreate = FormCreate
+  ClientHeight = 288
+  ClientWidth = 427
+  OnShow = FormShow
   Position = poMainFormCenter
   SessionProperties = 'Width;Height'
   LCLVersion = '2.0.10.0'
@@ -279,11 +279,11 @@ object AboutForm: TAboutForm
     AnchorSideLeft.Control = Bevel1
     AnchorSideLeft.Side = asrCenter
     AnchorSideTop.Control = Bevel1
-    Left = 178
-    Height = 30
-    Top = 251
-    Width = 75
-    BorderSpacing.Top = 11
+    Left = 169
+    Height = 33
+    Top = 247
+    Width = 88
+    BorderSpacing.Top = 10
     Default = True
     DefaultCaption = True
     Kind = bkOK
@@ -292,11 +292,19 @@ object AboutForm: TAboutForm
     TabOrder = 0
   end
   object Bevel1: TBevel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label2
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
     Left = 8
     Height = 13
-    Top = 240
-    Width = 415
-    Anchors = [akLeft, akRight]
+    Top = 237
+    Width = 411
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 15
+    BorderSpacing.Right = 8
     Shape = bsTopLine
   end
   object Label3: TLabel
@@ -310,10 +318,5 @@ object AboutForm: TAboutForm
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
-  end
-  object IniPropStorage1: TIniPropStorage
-    StoredValues = <>
-    Left = 48
-    Top = 150
   end
 end

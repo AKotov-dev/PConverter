@@ -59,6 +59,7 @@ type
     procedure ComboBox1Change(Sender: TObject);
     procedure EditButton3ButtonClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure FormShow(Sender: TObject);
     procedure ToolButton10Click(Sender: TObject);
     procedure ToolButton1Click(Sender: TObject);
     procedure ToolButton3Click(Sender: TObject);
@@ -177,6 +178,11 @@ begin
     GetEnvironmentVariable('HOME') + '/.config/pconverter.conf';
 
   MainForm.Caption := Application.Title;
+end;
+
+procedure TMainForm.FormShow(Sender: TObject);
+begin
+  IniPropStorage1.Restore;
 end;
 
 procedure TMainForm.ToolButton1Click(Sender: TObject);

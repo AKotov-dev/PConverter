@@ -53,12 +53,12 @@ begin
 
     ExProcess.Execute;
 
-    //Пока поток запущен, отдавать результат прогресса из консоли в MainForm.StatusText
+    //Пока поток запущен, отдавать результат выполнения в MainForm.Memo1
     while ExProcess.Running do
     begin
       Result.LoadFromStream(ExProcess.Output);
       //Выводим лог конвертирования
-     // if Result.Count <> 0 then
+      if Result.Count <> 0 then
         Synchronize(@ShowLog);
     end;
 
@@ -85,7 +85,7 @@ begin
   end;
 
   //Создаём команду
-  command := 'alien --to-' + MainForm.ComboBox1.Text + ' ';
+  command := 'fakeroot alien --to-' + MainForm.ComboBox1.Text + ' ';
   if MainForm.CheckBox1.Checked then
     command := command + '--scripts ';
   if MainForm.CheckBox2.Checked then
@@ -142,6 +142,5 @@ procedure StartConvert.ShowLog;
 begin
   MainForm.Memo1.Lines.Add(Trim(Result[0]));
 end;
-
 
 end.

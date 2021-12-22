@@ -1,20 +1,21 @@
 object MainForm: TMainForm
-  Left = 305
-  Height = 686
+  Left = 291
+  Height = 675
   Top = 123
-  Width = 610
+  Width = 766
   ActiveControl = EditButton1
   Caption = 'PСonverter'
-  ClientHeight = 686
-  ClientWidth = 610
+  ClientHeight = 675
+  ClientWidth = 766
   OnCreate = FormCreate
+  OnShow = FormShow
   SessionProperties = 'Height;Left;Top;Width;CheckBox1.Checked;CheckBox10.Checked;CheckBox11.Checked;CheckBox13.Checked;CheckBox14.Checked;CheckBox15.Checked;CheckBox2.Checked;CheckBox3.Checked;CheckBox4.Checked;CheckBox5.Checked;CheckBox6.Checked;CheckBox7.Checked;CheckBox8.Checked;CheckBox9.Checked'
   LCLVersion = '2.0.10.0'
   object ToolBar1: TToolBar
     Left = 0
     Height = 87
     Top = 0
-    Width = 610
+    Width = 766
     AutoSize = True
     ButtonHeight = 85
     ButtonWidth = 90
@@ -87,11 +88,14 @@ object MainForm: TMainForm
     end
   end
   object EditButton1: TEditButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
     Left = 8
     Height = 36
     Top = 109
-    Width = 594
+    Width = 750
     Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Right = 8
     ButtonCaption = '+'
     ButtonWidth = 23
     MaxLength = 0
@@ -101,11 +105,14 @@ object MainForm: TMainForm
     TabOrder = 1
   end
   object EditButton2: TEditButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
     Left = 8
     Height = 36
     Top = 143
-    Width = 594
+    Width = 750
     Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Right = 8
     ButtonCaption = '...'
     ButtonWidth = 23
     MaxLength = 0
@@ -129,11 +136,14 @@ object MainForm: TMainForm
     ParentFont = False
   end
   object ComboBox1: TComboBox
-    Left = 442
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 598
     Height = 36
     Top = 178
     Width = 160
     Anchors = [akTop, akRight]
+    BorderSpacing.Right = 8
     ItemHeight = 0
     ItemIndex = 0
     Items.Strings = (
@@ -151,12 +161,15 @@ object MainForm: TMainForm
     Text = 'Package Type'
   end
   object Label2: TLabel
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
     Left = 8
-    Height = 80
+    Height = 67
     Top = 213
-    Width = 594
+    Width = 750
     Anchors = [akTop, akLeft, akRight]
     AutoSize = False
+    BorderSpacing.Right = 8
     Caption = 'Alien supports conversion between Linux Standard Base (LSB), LSB-compliant .rpm packages, .deb, Stampede (.slp), Solaris (.pkg) and Slackware (.tgz, .txz, .tbz, .tlz) packages. It is also capable of automatically installing the generated packages, and can try to convert the installation scripts included in the archive well.'
     Font.Height = -12
     Font.Name = 'Sans'
@@ -169,7 +182,7 @@ object MainForm: TMainForm
     Left = 8
     Height = 32
     Hint = 'Try to convert the scripts that are meant to be run when the package is installed'#10'and removed. Use this with caution, becuase these scripts might be designed to'#10'work on a system unlike your own, and could cause problems. It is recommended'#10'that you examine the scripts by hand and check to see what they do before using this option.'
-    Top = 318
+    Top = 306
     Width = 85
     Caption = '--scripts'
     ParentShowHint = False
@@ -179,7 +192,7 @@ object MainForm: TMainForm
   object Label3: TLabel
     Left = 8
     Height = 16
-    Top = 297
+    Top = 285
     Width = 77
     Caption = 'OPTIONS'
     Font.Height = -15
@@ -192,7 +205,7 @@ object MainForm: TMainForm
     Left = 152
     Height = 32
     Hint = 'By default, alien adds one to the minor version number of each package'#10'it converts. If this option is given, alien will not do this.'
-    Top = 318
+    Top = 306
     Width = 124
     Caption = '--keep-version'
     ParentShowHint = False
@@ -203,7 +216,7 @@ object MainForm: TMainForm
     Left = 316
     Height = 32
     Hint = 'Sanitize all file owners and permissions when building a deb. This may be useful if'#10'the original package is a mess. On the other hand, it may break some things to mess'#10'with their permissions and owners to the degree this does, so it defaults to off. This'#10'can only be used when converting to debian packages.'
-    Top = 318
+    Top = 306
     Width = 98
     Caption = '--fixperms'
     ParentShowHint = False
@@ -214,7 +227,7 @@ object MainForm: TMainForm
     Left = 476
     Height = 32
     Hint = 'Do not use any patch files.'
-    Top = 351
+    Top = 339
     Width = 96
     Caption = '--nopatch'
     ParentShowHint = False
@@ -225,7 +238,7 @@ object MainForm: TMainForm
     Left = 8
     Height = 32
     Hint = 'Generate a temporary directory suitable for building a package from, but do not'#10' actually create the package. This is useful if you want to move files around in the'#10' package before building it. The package can be built from this temporary directory by'#10' running "debian/rules binary", if you were creating a Debian package, or by running'#10' "rpmbuild -bb <packagename>.spec" if you were creating a Red Hat package.'
-    Top = 351
+    Top = 339
     Width = 100
     Caption = '--generate'
     ParentShowHint = False
@@ -236,7 +249,7 @@ object MainForm: TMainForm
     Left = 152
     Height = 32
     Hint = 'Like -g, but do not generate the packagename.orig directory. This is only useful when'#10'you are very low on disk space and are generating a debian package.'
-    Top = 351
+    Top = 339
     Width = 82
     Caption = '--single'
     ParentShowHint = False
@@ -247,7 +260,7 @@ object MainForm: TMainForm
     Left = 316
     Height = 32
     Hint = 'Automatically install each generated package, and remove the package file'#10'after it has been installed.'
-    Top = 351
+    Top = 339
     Width = 83
     Caption = '--install'
     ParentShowHint = False
@@ -258,7 +271,7 @@ object MainForm: TMainForm
     Left = 476
     Height = 32
     Hint = 'Be less strict about which patch file is used, perhaps attempting to use a patch file'#10'for an older verson of the package. This is not guaranteed to always work; older'#10'patches may not necessarily work with newer packages.'
-    Top = 384
+    Top = 372
     Width = 101
     Caption = '--anypatch'
     ParentShowHint = False
@@ -269,7 +282,7 @@ object MainForm: TMainForm
     Left = 316
     Height = 32
     Hint = 'Instead of incrementing the version number of the converted package'#10'by 1, increment it by the given number.'
-    Top = 384
+    Top = 372
     Width = 89
     Caption = '--bump='
     ParentShowHint = False
@@ -280,7 +293,7 @@ object MainForm: TMainForm
     Left = 8
     Height = 32
     Hint = 'Test the generated packages. Currently this is only supported for debian packages,'#10'which, if lintian is installed, will be tested with lintian and lintian''s output displayed.'
-    Top = 384
+    Top = 372
     Width = 69
     Caption = '--test'
     ParentShowHint = False
@@ -291,7 +304,7 @@ object MainForm: TMainForm
     Left = 8
     Height = 32
     Hint = 'Specify the patch to be used instead of automatically looking the patch up in'#10'/var/lib/alien. This has no effect unless a debian package is being built.'
-    Top = 417
+    Top = 405
     Width = 88
     Caption = '--patch='
     ParentShowHint = False
@@ -302,7 +315,7 @@ object MainForm: TMainForm
     Left = 8
     Height = 32
     Hint = 'Specifiy a description for the package. This only has an effect when converting'#10'from the tgz package format, which lacks descriptions.'
-    Top = 450
+    Top = 438
     Width = 121
     Caption = '--description='
     ParentShowHint = False
@@ -313,7 +326,7 @@ object MainForm: TMainForm
     Left = 152
     Height = 32
     Hint = 'Specifiy a version for the package. This only has an effect when converting'#10'from the tgz package format, which may lack version information.'
-    Top = 384
+    Top = 372
     Width = 97
     Caption = '--version='
     ParentShowHint = False
@@ -321,11 +334,19 @@ object MainForm: TMainForm
     TabOrder = 13
   end
   object Memo1: TMemo
+    AnchorSideTop.Control = Edit3
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = ProgressBar1
     Left = 8
-    Height = 169
-    Top = 488
-    Width = 594
+    Height = 171
+    Top = 474
+    Width = 750
     Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Top = 2
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 5
     ScrollBars = ssAutoVertical
     TabOrder = 22
     WantReturns = False
@@ -335,7 +356,7 @@ object MainForm: TMainForm
     AnchorSideTop.Side = asrCenter
     Left = 8
     Height = 15
-    Top = 664
+    Top = 651
     Width = 23
     Caption = 'Idle'
     ParentColor = False
@@ -343,12 +364,18 @@ object MainForm: TMainForm
   object ProgressBar1: TProgressBar
     AnchorSideLeft.Control = Label4
     AnchorSideLeft.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
     Left = 35
-    Height = 15
-    Top = 664
-    Width = 567
+    Height = 17
+    Top = 650
+    Width = 723
     Anchors = [akLeft, akRight, akBottom]
     BorderSpacing.Left = 4
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 8
     TabOrder = 23
   end
   object Edit1: TEdit
@@ -358,7 +385,7 @@ object MainForm: TMainForm
     AnchorSideTop.Side = asrCenter
     Left = 407
     Height = 36
-    Top = 382
+    Top = 370
     Width = 53
     BorderSpacing.Left = 2
     TabOrder = 16
@@ -368,12 +395,15 @@ object MainForm: TMainForm
     AnchorSideLeft.Side = asrBottom
     AnchorSideTop.Control = CheckBox14
     AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
     Left = 131
     Height = 36
-    Top = 448
-    Width = 471
+    Top = 436
+    Width = 627
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Left = 2
+    BorderSpacing.Right = 8
     TabOrder = 21
   end
   object Edit4: TEdit
@@ -383,7 +413,7 @@ object MainForm: TMainForm
     AnchorSideTop.Side = asrCenter
     Left = 251
     Height = 36
-    Top = 382
+    Top = 370
     Width = 53
     BorderSpacing.Left = 2
     TabOrder = 14
@@ -393,12 +423,15 @@ object MainForm: TMainForm
     AnchorSideLeft.Side = asrBottom
     AnchorSideTop.Control = CheckBox13
     AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
     Left = 98
     Height = 36
-    Top = 415
-    Width = 504
+    Top = 403
+    Width = 660
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Left = 2
+    BorderSpacing.Right = 8
     ButtonCaption = '+'
     ButtonWidth = 23
     MaxLength = 0
@@ -424,7 +457,7 @@ object MainForm: TMainForm
     Left = 476
     Height = 32
     Hint = 'Be verbose: Display each command alien runs in the process'#10'of converting a package.'
-    Top = 318
+    Top = 306
     Width = 93
     Caption = '--verbose'
     Checked = True

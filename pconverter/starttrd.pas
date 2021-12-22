@@ -85,7 +85,7 @@ begin
   end;
 
   //Создаём команду
-  command := 'alien --to-' + MainForm.ComboBox1.Text + ' ';
+  command := 'fakeroot alien --to-' + MainForm.ComboBox1.Text + ' ';
   if MainForm.CheckBox1.Checked then
     command := command + '--scripts ';
   if MainForm.CheckBox2.Checked then
@@ -133,6 +133,7 @@ begin
     Label4.Caption := SProgressIdle;
     ProgressBar1.Style := pbstNormal;
     ProgressBar1.Position := 0;
+    ProgressBar1.Repaint;
     ConvertBtn.Enabled := True;
   end;
 end;

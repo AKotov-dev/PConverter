@@ -1,12 +1,13 @@
 object AboutForm: TAboutForm
   Left = 380
-  Height = 291
+  Height = 288
   Top = 142
-  Width = 430
+  Width = 427
   Caption = 'About'
-  ClientHeight = 291
-  ClientWidth = 430
+  ClientHeight = 288
+  ClientWidth = 427
   OnCreate = FormCreate
+  OnShow = FormShow
   Position = poMainFormCenter
   SessionProperties = 'Width;Height'
   LCLVersion = '2.0.10.0'
@@ -272,18 +273,18 @@ object AboutForm: TAboutForm
     Height = 150
     Top = 72
     Width = 253
-    Caption = 'License: GPLv3'#10'Author: alex_q_2000 (C) 2021'#10'Compilation: Lazarus 2.0.10'#10'Gratitudes: foxoman'#10#10'Russian Linux Forum: https://linuxforum.ru'#10#10'The idea of the GUI was borrowed from'#10'the project "Package Converter", which'#10'was developed by "foxman" 04.07.2009'
+    Caption = 'License: GPLv3'#10'Author: alex_q_2000 (C) 2021'#10'Compilation: Lazarus 2.0.10'#10'Gratitudes: foxoman'#10#10'Russian Linux Forum: https://linuxforum.ru'#10#10'The idea of the GUI was borrowed from'#10'the project "Package Converter", which'#10'was developed by "foxoman" 04.07.2009'
     ParentColor = False
   end
   object BitBtn1: TBitBtn
     AnchorSideLeft.Control = Bevel1
     AnchorSideLeft.Side = asrCenter
     AnchorSideTop.Control = Bevel1
-    Left = 178
-    Height = 30
-    Top = 251
-    Width = 75
-    BorderSpacing.Top = 11
+    Left = 169
+    Height = 33
+    Top = 247
+    Width = 88
+    BorderSpacing.Top = 10
     Default = True
     DefaultCaption = True
     Kind = bkOK
@@ -292,11 +293,19 @@ object AboutForm: TAboutForm
     TabOrder = 0
   end
   object Bevel1: TBevel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label2
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
     Left = 8
     Height = 13
-    Top = 240
-    Width = 415
-    Anchors = [akLeft, akRight]
+    Top = 237
+    Width = 411
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 15
+    BorderSpacing.Right = 8
     Shape = bsTopLine
   end
   object Label3: TLabel
@@ -310,10 +319,5 @@ object AboutForm: TAboutForm
     Font.Style = [fsBold]
     ParentColor = False
     ParentFont = False
-  end
-  object IniPropStorage1: TIniPropStorage
-    StoredValues = <>
-    Left = 48
-    Top = 150
   end
 end

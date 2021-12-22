@@ -2,7 +2,7 @@
 name=pconverter
 
 [VERSION]
-version=1.1
+version=1.2
 
 [RELEASE]
 release=0.mrx8
@@ -24,7 +24,7 @@ maintainer=Alex Kotov
 vendor=alex_q_2000 (C) 2021
 
 [SUMMARY]
-summary=PConverter - GUI Frontend for Alien
+summary=PConverter - GUI for Alien
 
 [URLCOPY]
 urlcopy=https://github.com/AKotov-dev/PConverter
@@ -33,7 +33,7 @@ urlcopy=https://github.com/AKotov-dev/PConverter
 license=GPLv3
 
 [DEPS]
-deps=alien
+deps=alien fakeroot
 
 [META]
 meta=0
@@ -51,21 +51,8 @@ deb=1
 0=/usr/bin/pconverter
 1=/usr/share/pconverter/
 2=/usr/share/icons/pconverter.png
-3=/usr/share/polkit-1/actions/pconverter.policy
-4=/usr/share/applications/pconverter.desktop
-5=/usr/share/doc/pconverter/
-
-[AFTERINSTALL]
-0=#ldconfig
-1=#update-desktop-database -q /usr/share/applications
-2=#update-mime-database /usr/share/mime
-3=#gtk-update-icon-cache -q -f /usr/share/icons/hicolor
-
-[AFTERREMOVE]
-0=#ldconfig
-1=#update-desktop-database -q /usr/share/applications
-2=#update-mime-database /usr/share/mime
-3=#gtk-update-icon-cache -q -f /usr/share/icons/hicolor
+3=/usr/share/applications/pconverter.desktop
+4=/usr/share/doc/pconverter/
 
 [URL32]
 url32=https://github.com/AKotov-dev/PConverter
@@ -83,6 +70,11 @@ devtool=Lazarus
 toolversion=2.0.10
 
 [INFO]
-0=v1.1
-1=+ saving the checkbox state
-2=+ cosmetic edits
+0=v1.2
+1=+ fakeroot instead of pkexec
+2=+ fakeroot rpm-dependence
+3=+ Plasma scaling (remove ~/.config/pconverter.conf)
+4=
+5=v1.1
+6=+ saving the checkbox state
+7=+ cosmetic edits
