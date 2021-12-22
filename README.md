@@ -1,8 +1,9 @@
-PConverter - GUI Frontend for Alien (Package Converter)
+PConverter - GUI for Alien (Package Converter)
 ---
 License: GPLv3  
 Author: alex_q_2000 (C) 2021  
 Compilation: Lazarus 2.0.10  
+Dependencies: alien fakeroot  
 Gratitudes: foxoman  
 
 ![](https://github.com/AKotov-dev/PConverter/blob/main/ScreenShot.png)
