@@ -2,10 +2,10 @@
 name=pconverter
 
 [VERSION]
-version=1.2
+version=1.3
 
 [RELEASE]
-release=0.mrx8
+release=0.mrx9
 
 [GROUP]
 group=Applications/File
@@ -33,7 +33,7 @@ urlcopy=https://github.com/AKotov-dev/PConverter
 license=GPLv3
 
 [DEPS]
-deps=alien fakeroot
+deps=alien fakeroot gtk2
 
 [META]
 meta=0
@@ -45,7 +45,7 @@ noarch=0
 sign=0
 
 [DEB]
-deb=1
+deb=0
 
 [FILES]
 0=/usr/bin/pconverter
@@ -67,14 +67,20 @@ programname=PConverter
 devtool=Lazarus
 
 [TOOLVERSION]
-toolversion=2.0.10
+toolversion=2.2.0
 
 [INFO]
-0=v1.2
-1=+ fakeroot instead of pkexec
-2=+ fakeroot rpm-dependence
-3=+ Plasma scaling (remove ~/.config/pconverter.conf)
-4=
-5=v1.1
-6=+ saving the checkbox state
-7=+ cosmetic edits
+0=v1.3
+1=+ Recompilation in Lazarus 2.2.0
+2=+ Added "gtk2" dependency (rpm)
+3=+ Correction of the Russian translation
+4=+ Release for Mageia-9 and higher
+5=
+6=v1.2
+7=+ fakeroot instead of pkexec
+8=+ fakeroot rpm-dependence
+9=+ Plasma scaling (remove ~/.config/pconverter.conf)
+10=
+11=v1.1
+12=+ saving the checkbox state
+13=+ cosmetic edits

@@ -183,6 +183,9 @@ end;
 procedure TMainForm.FormShow(Sender: TObject);
 begin
   IniPropStorage1.Restore;
+  EditButton1.Button.Width := EditButton1.Height;
+  EditButton2.Button.Width := EditButton2.Height;
+  EditButton3.Button.Width := EditButton3.Height;
 end;
 
 procedure TMainForm.ToolButton1Click(Sender: TObject);

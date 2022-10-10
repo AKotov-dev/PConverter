@@ -32,8 +32,6 @@ var
 
 implementation
 
-//uses Unit1;
-
 {$R *.lfm}
 
 { TAboutForm }

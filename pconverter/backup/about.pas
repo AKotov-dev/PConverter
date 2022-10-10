@@ -20,7 +20,6 @@ type
     Label2: TLabel;
     Label3: TLabel;
     procedure BitBtn1Click(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private
 
@@ -33,8 +32,6 @@ var
 
 implementation
 
-//uses Unit1;
-
 {$R *.lfm}
 
 { TAboutForm }
@@ -44,13 +41,9 @@ begin
   Close;
 end;
 
-procedure TAboutForm.FormCreate(Sender: TObject);
-begin
-  Label1.Caption := Application.Title;
-end;
-
 procedure TAboutForm.FormShow(Sender: TObject);
 begin
+  Label1.Caption := Application.Title;
   AboutForm.Width := Label2.Left + Label2.Width + 20;
   AboutForm.Height := BitBtn1.Top + BitBtn1.Height + 10;
 end;
